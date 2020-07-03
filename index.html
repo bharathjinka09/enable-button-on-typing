@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Enable Button on typing</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body style="background-color:aliceblue;">
+	<input onkeyup="enableBtn();" type="text">
+	<button type="submit" disabled>Submit</button>
+
+	<script type="text/javascript">
+		
+		function enableBtn(){
+			var textbox = document.querySelector('input');
+			console.log(textbox.value);
+			if (textbox.value.length == 0){
+				document.querySelector('button').disabled=true;
+			}
+			else{
+				document.querySelector('button').disabled=false;
+			}
+		}
+	</script>
+</body>
+</html>
