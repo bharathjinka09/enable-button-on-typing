@@ -8,6 +8,9 @@
 <body style="background-color:aliceblue;">
 	<input onkeyup="enableBtn();" type="text">
 	<button type="submit" disabled>Submit</button>
+	<br>
+	<br>
+	<b>You are typing</b> <p></p>
 
 	<script type="text/javascript">
 		
@@ -19,6 +22,7 @@
 			}
 			else{
 				document.querySelector('button').disabled=false;
+				document.querySelector('p').textContent = textbox.value;
 			}
 		}
 	</script>
