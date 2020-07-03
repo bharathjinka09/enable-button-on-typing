@@ -19,6 +19,7 @@
 			console.log(textbox.value);
 			if (textbox.value.length == 0){
 				document.querySelector('button').disabled=true;
+				document.querySelector('p').textContent = '';
 			}
 			else{
 				document.querySelector('button').disabled=false;
